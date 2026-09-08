@@ -291,7 +291,7 @@ Pull Request → [Validate + Plan] → Merge to main → [Apply] → Slack Notif
 
 | Stage | Trigger | Steps |
 |:---|:---|:---|
-| **Validate & Plan** | Every PR to `main` | Checkout → Terraform Init → Validate → Plan (output posted to PR) |
+| **Validate & Plan** | Every PR to `main` | Checkout → Terraform Init → Validate → Plan (runs when AWS secrets are available) |
 | **Apply** | Push/merge to `main` | Checkout → Terraform Init → Apply → Slack notification |
 
 ### Required GitHub Secrets
