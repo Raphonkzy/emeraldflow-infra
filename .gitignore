@@ -1,0 +1,35 @@
+# Terraform runtime and cache
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files (may contain sensitive credentials)
+*.tfvars
+*.tfvars.json
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE and editor artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
